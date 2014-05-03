@@ -70,7 +70,7 @@ public class AchievementCommand extends VanillaCommand {
             Command.broadcastCommandMessage(sender, String.format("Successfully given all achievements to %s", player.getName()));
             return true;
         }
-
+    
         Achievement achievement = Bukkit.getUnsafe().getAchievementFromInternalName(statisticString);
         Statistic statistic = Bukkit.getUnsafe().getStatisticFromInternalName(statisticString);
 
